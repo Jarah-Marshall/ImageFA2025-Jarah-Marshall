@@ -5,11 +5,15 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+      <a-asset-item id="spaceShip" src="Assets/Space ship blend.obj"></a-asset-item>
+      <a-asset-item id="moon" src="Assets/Moon.obj" ></a-asset-item>
+      </a-assets>    
+
+      <a-obj-model src="#spaceShip" material="shader:flat;src:Assets/360_F_482600444_GNjCyJoJbPZw1u3iVvL3DuPUPS3O8V5A.jpg"></a-obj-model>
+      <a-obj-model position="5.791 11.496 12.728" scale="2 2 2"src="#moon" material="shader:flat; src:Assets/rubens-mariuzzo-hRJqxMCXH1I-unsplash.jpg"></a-entity>
+
+      <a-sky src="Assets/52832796175_a51e18ded1_k.jpg"></a-sky>
     </a-scene>
   </body>
 </html>
