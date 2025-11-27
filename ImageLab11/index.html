@@ -7,11 +7,19 @@
     <a-scene>
       <a-assets>
       <a-asset-item id="spaceShip" src="Assets/Space ship blend.obj"></a-asset-item>
-      <a-asset-item id="moon" src="Assets/Moon.obj" ></a-asset-item>
+      <a-asset-item id="planet" src="Assets/Moon.obj" ></a-asset-item>
+      <a-asset-item id="black_hole" src="Assets/blackhole.glb"></a-asset-item>
+      <a-asset-item id="space_station" src="Assets/sci-fi_space_station_2.glb"></a-asset-item>
       </a-assets>    
 
-      <a-obj-model src="#spaceShip" material="shader:flat;src:Assets/360_F_482600444_GNjCyJoJbPZw1u3iVvL3DuPUPS3O8V5A.jpg"></a-obj-model>
-      <a-obj-model position="5.791 11.496 12.728" scale="2 2 2"src="#moon" material="shader:flat; src:Assets/rubens-mariuzzo-hRJqxMCXH1I-unsplash.jpg"></a-entity>
+      <a-obj-model src="#spaceShip" scale=".75 .75 .75" material="shader:flat;src:Assets/360_F_482600444_GNjCyJoJbPZw1u3iVvL3DuPUPS3O8V5A.jpg"></a-obj-model>
+      <a-obj-model position="0 50 10" scale="15 15 15"src="#planet" material="shader:flat; src:Assets/rubens-mariuzzo-hRJqxMCXH1I-unsplash.jpg"></a-obj-model>
+      <a-obj-model position="90 -50 -40" scale="12 12 12"src="#planet" material="shader:flat; src:Assets/frantisek-g-WbUaNmmChSg-unsplash.jpg"></a-obj-model>
+      <a-obj-model position="-120 30 -25" scale="10 10 10"src="#planet" material="shader:flat; src:Assets/lucas-van-oort-wsbO81iLCI4-unsplash.jpg"></a-obj-model>
+      <a-obj-model position="-150 0 0" scale="25 25 25"src="#planet" material="shader:flat; src:Assets/eduardo-filgueiras-YZQzk-QLdyU-unsplash.jpg"></a-obj-model>
+      <a-obj-model position="200 0 0" scale="80 80 80"src="#planet" material="shader:flat; src:Assets/pawel-czerwinski-oASPwOoYl2w-unsplash.jpg"></a-obj-model>
+      <a-entity position="0 -180 0" scale="100 100 100" gltf-model="#black_hole" material="shader:flat; src:Assets/buddha-elemental-3d-HgkgKP_khnQ-unsplash.jpg"></a-entity>
+      <a-entity gltf-model="#space_station" scale="10 10 10" position="0 10 -110" ></a-entity>
 
       <a-sky src="Assets/52832796175_a51e18ded1_k.jpg"></a-sky>
     </a-scene>
